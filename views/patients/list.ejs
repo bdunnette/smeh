@@ -23,8 +23,8 @@
         <h1 id="main-title"><%= __('Welcome') %></h1>
         <h2>Available Patients</h2>
         <ul>
-        <% _.each(patients, function (patients) { %>
-    	<li><%= patient.givenName %></li>
+        <% _.each(patients, function (patient) { %>
+    		<li><%= patient.familyName %>, <%= patient.givenName %></li>
     	<% }) %>
     	</ul>
     </div>
