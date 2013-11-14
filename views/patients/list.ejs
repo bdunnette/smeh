@@ -24,7 +24,7 @@
         <h2>Available Patients</h2>
         <ul>
         <% _.each(patients, function (patient) { %>
-    		<li><%= patient.familyName %>, <%= patient.givenName %></li>
+    		<li><%= patient.id %>: <%= patient.familyName %>, <%= patient.givenName %> <script>var birthDate = new Date('<%= patient.birthDate %>');console.log(birthDate);</script></li>
     	<% }) %>
     	</ul>
     </div>
